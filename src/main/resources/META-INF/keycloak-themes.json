@@ -1,0 +1,10 @@
+{
+    "themes": [
+        {
+            "name": "omb-email-2fa-theme",
+            "types": [
+                "email"
+            ]
+        }
+    ]
+}
