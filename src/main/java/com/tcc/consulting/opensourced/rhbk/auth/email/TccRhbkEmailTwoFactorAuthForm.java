@@ -176,7 +176,7 @@ public class TccRhbkEmailTwoFactorAuthForm extends AbstractUsernameFormAuthentic
             EmailTemplateProvider emailProvider = session.getProvider(EmailTemplateProvider.class);
             emailProvider.setRealm(realm);
             emailProvider.setUser(user);
-            emailProvider.send("emailCodeSubject", subjectParams, "email-2f2-emailbody.ftl", emailBodyAttributes);
+            emailProvider.send("emailCodeSubject", subjectParams, "email-2fa-emailbody.ftl", emailBodyAttributes);
         } catch (EmailException eex) {
             log.errorf(eex, "Cannot send verification code via email for realm %s from user %s", realm.getId(),
                     user.getUsername());
